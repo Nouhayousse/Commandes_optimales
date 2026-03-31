@@ -30,7 +30,7 @@ def solve_optimal_control(N, alpha, xi0_val, xi1_val,verbose=False):
     # (l'ancienne formule splittée x<0.5 / x>=0.5 était incorrecte)
     f = np.pi**2 * np.sin(np.pi * x) + p_exact / alpha
 
-    z_d = 3 - 6*x + np.sin(np.pi*x)
+    z_d = (1-np.pi**2)*np.sin(np.pi*x)
 
     
 
